@@ -9,11 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#FFD700",
-        bgPrimary: "#22272E",
-        bgSecondary: "#181C22",
-        success: "#3BCD52",
-        error: "#E53E3E",
+        primary: 'var(--color-primary)',
+        textPrimary: 'var(--color-text-primary)',
+        bgPrimary: 'var(--color-bg-primary)',
+        bgHighlight: 'var(--color-bg-highlight)',
+        error: 'var(--color-error)',
+        success: 'var(--color-success)',
+        buttonFillPrimary: 'var(--color-button-primary-fill)',
+        buttonStrokePrimary: 'var(--color-button-primary-stroke)',
+        buttonFillSecondary: 'var(--color-button-secondary-fill)',
+        buttonStrokeSecondary: 'var(--color-button-secondary-stroke)',
+      },
+      fontSize: {
+        sm: '0.875rem',
+        base: '1rem',
       },
     },
   },

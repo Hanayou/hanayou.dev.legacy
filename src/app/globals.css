@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: #FF5B00;
+    --color-text-primary: #fff;
+    --color-bg-primary: #22272E;
+    --color-bg-highlight: #181C22;
+    --color-error: #E53E3E;
+    --color-success: #3BCD52;
+    --color-button-primary-stroke: linear-gradient(90deg, #FFF 0%, #FF3E00 100%);
+    --color-button-primary-fill: linear-gradient(90deg, #FF5B00 54%, #FF7C34 54%);
+    --color-button-secondary-stroke: linear-gradient(90deg, #22272E 54%, #FFFFFF 54%);
+    --color-button-secondary-fill: linear-gradient(90deg, #FFF 0%, #22272E 100%);
+  }
+
+  body {
+    @apply bg-bgPrimary text-textPrimary text-base;
+  }
+
+  h1 {
+    @apply text-[4.5rem] font-bold leading-[100%] sm:text-[3.75rem] sm:leading-[60%];
+  }
+
+  h2 {
+    @apply text-[3.5rem] font-bold sm:text-[3rem];
+  }
+
+  h3 {
+    @apply text-[2.25rem] font-normal sm:text-[1.75rem];
+  }
+
+  h4 {
+    @apply text-[1.5rem] font-normal;
+  }
+}
