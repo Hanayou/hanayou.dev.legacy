@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} max-w-[1366px] m-auto`}>
+      <body className={`${lato.className} max-w-[1366px] m-auto overflow-x-hidden`}>
         <MainNavigation />
         {children}
       </body>
