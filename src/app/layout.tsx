@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/widgets/Header/Header";
+import MainNavigation from "@/widgets/main-navigation/ui/MainNavigation";
 
 
 const lato = Lato({
@@ -23,8 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} bg-bgPrimary text-white max-w-[1366px] m-auto`}>
-        <Header />
+      <body className={`${lato.className} max-w-[1366px] m-auto`}>
+        <MainNavigation />
         {children}
       </body>
     </html>
