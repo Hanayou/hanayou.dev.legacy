@@ -27,10 +27,20 @@ export default function Home() {
           
           <h4 className="font-bold uppercase tracking-[0.5em]">languages</h4>
         </div>
-        
-
-        
       </main>
+
+       {/* TODO: Add gradient overlay to image */}
+      <div className="-z-50 absolute top-0 left-0 w-screen h-[1080px] grid grid-cols-[1fr_683px_150px_383px_150px_1fr]"> 
+        <Image
+          src="/japan.png"
+          alt="Japan"
+          fill={true}
+          objectFit='cover'
+          className="col-start-3 col-span-4 "
+        />
+        <div className="z-0 col-start-3 col-span-1 w-full h-full bg-bgPrimary"></div>
+        <div className="col-start-4 col-span-1 w-full h-full clip-custom bg-bgPrimary"></div>
+      </div>
     </>
   );
 }
@@ -45,3 +55,4 @@ export default function Home() {
 
 // background: linear-gradient(113.14deg, rgba(0, 0, 0, 0.8) 27.48%, rgba(0, 0, 0, 0.63) 34.72%, rgba(0, 0, 0, 0) 80.93%), url(japan.jpg);
 // filter: blur(2px);
+/* CountryBG */
