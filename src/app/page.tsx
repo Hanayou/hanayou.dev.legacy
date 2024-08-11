@@ -31,13 +31,16 @@ export default function Home() {
 
        {/* TODO: Add gradient overlay to image */}
       <div className="-z-50 absolute top-0 left-0 w-screen h-[1080px] grid grid-cols-[1fr_683px_150px_383px_150px_1fr]"> 
-        <Image
-          src="/japan.png"
-          alt="Japan"
-          fill={true}
-          objectFit='cover'
-          className="col-start-3 col-span-4 "
-        />
+        <div className="absolute col-start-3 col-span-4 w-full h-full bg-bgPrimary overflow-hidden">
+          <Image
+            src="/japan.png"
+            alt="Japan"
+            fill={true}
+            objectFit='cover'
+            className="col-start-3 col-span-4 blur-[2px]"
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/80 via-black/63 to-transparent"></div>
+        </div>
         <div className="z-0 col-start-3 col-span-1 w-full h-full bg-bgPrimary"></div>
         <div className="col-start-4 col-span-1 w-full h-full clip-custom bg-bgPrimary"></div>
       </div>
