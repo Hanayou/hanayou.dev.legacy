@@ -10,8 +10,6 @@
     --color-bg-highlight: #22272E;
     --color-error: #E53E3E;
     --color-success: #3BCD52;
-    --color-button-primary-stroke: linear-gradient(90deg, #FFF 0%, #FF3E00 100%);
-    --color-button-primary-fill: linear-gradient(90deg, #FF5B00 54%, #FF7C34 54%);
     --color-button-secondary-stroke: linear-gradient(90deg, #22272E 54%, #FFFFFF 54%);
     --color-button-secondary-fill: linear-gradient(90deg, #FFF 0%, #22272E 100%);
   }

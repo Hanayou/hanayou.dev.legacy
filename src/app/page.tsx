@@ -1,3 +1,5 @@
+import PrimaryButton from '@/widgets/button/ui/Button';
+import { Mail } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Home() {
@@ -9,7 +11,7 @@ export default function Home() {
             <h3>Hi, I'm <span className="text-primary">Sam</span></h3>
             <h1>Software<br/><span className="text-primary">Engineer /&gt;</span></h1>
             <p className="max-w-[30.75rem]">Passionate engineer with over 5 years of professional development and consulting experience. Always looking to expand knowledge and develop exciting, cutting edge products.</p>
-            <button>See My Projects</button>
+            <PrimaryButton text="See My Projects" size="default" hasIcon={false} icon={<div />} />
             <div>Social Links Component</div>
           </div>
           
@@ -24,12 +26,13 @@ export default function Home() {
         <div className='flex flex-col items-center text-center'>
           <h2>My <span className="text-primary">Skills</span></h2>
           <p>GRID</p>
-          
           <h4 className="font-bold uppercase tracking-[0.5em]">languages</h4>
+          <PrimaryButton text="See My Projects" size="default" hasIcon={false} icon={<div />} disabled/>
+          <PrimaryButton text="See My Projects" size="small" hasIcon={false} icon={<div />} />
+          <PrimaryButton text="See My Projects" size="small" hasIcon={true} icon={<Mail />} />
         </div>
       </main>
 
-       {/* TODO: Add gradient overlay to image */}
       <div className="-z-50 absolute top-0 left-0 w-screen h-[1080px] grid grid-cols-[1fr_683px_150px_383px_150px_1fr]"> 
         <div className="absolute col-start-3 col-span-4 w-full h-full bg-bgPrimary overflow-hidden">
           <Image

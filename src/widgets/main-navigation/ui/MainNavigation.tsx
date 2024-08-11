@@ -16,7 +16,7 @@ export default function MainNavigation() {
     },
     {
       icon: <Mail />,
-      label: 'Contact',
+      label: 'Contacts',
       path: '/contact'
     },
     {
