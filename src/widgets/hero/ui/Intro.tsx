@@ -9,7 +9,7 @@ export default function Intro() {
 
   return (
     <motion.div
-      className="flex flex-col items-center lg:items-start text-center lg:text-left gap-y-[2.6875rem] py-[1.5625rem] px-[2.375rem]"
+      className="flex flex-col items-center lg:items-start text-center lg:text-left gap-y-[2.6875rem] py-[1.5625rem] px-[38px]"
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0.5 }}
       transition={{ duration: 0.3 }}

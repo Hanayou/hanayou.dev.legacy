@@ -1,6 +1,7 @@
 import CountryBackground from '@/widgets/hero/ui/CountryBackground';
 import Intro from '@/widgets/hero/ui/Intro';
 import ProfileImage from '@/widgets/hero/ui/ProfileImage';
+import SkillsList from '@/widgets/skills-list/ui/SkillsList';
 
 export default function Home() {
   return (
@@ -12,9 +13,11 @@ export default function Home() {
         </div>
 
         <div className='flex flex-col items-center text-center'>
-          <h2>My <span className="text-primary">Skills</span></h2>
-          <p>GRID</p>
-          <h4 className="font-bold uppercase tracking-[0.5em]">languages</h4>
+          <h2 className='py-[120px]'>My <span className="text-primary">Skills</span></h2>
+          <SkillsList />
+         
+
+          <h4 className="font-bold uppercase tracking-[0.5em] py-[120px]">languages</h4>
         </div>
       </main>
         

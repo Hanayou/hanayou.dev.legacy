@@ -27,7 +27,7 @@
   }
 
   h3 {
-    @apply text-[1.75rem] font-normal lg:text-[2.25rem];
+    @apply text-[1.75rem] font-normal lg:text-[2.25rem] leading-[100%];
   }
 
   h4 {
@@ -42,7 +42,7 @@
 
 @layer components {
   ::-webkit-scrollbar {
-    width: 0.3vw;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
