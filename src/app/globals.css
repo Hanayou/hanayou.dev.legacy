@@ -39,3 +39,25 @@
         polygon(0% 0%, 100% 0%, 0% 100%);
   }
 }
+
+@layer components {
+  ::-webkit-scrollbar {
+    width: 0.3vw;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background-color: 216 17% 11%;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 100vh;
+    width: auto;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+    opacity: 1;
+  }
+}
