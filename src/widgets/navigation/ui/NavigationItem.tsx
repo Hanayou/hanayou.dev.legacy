@@ -12,7 +12,7 @@ export const NavigationItem = (props: TNavigationItem) => {
     <li key={props.path}>
       <Link href={props.path}>
         <div className={cn(
-          "flex flex-col items-center justify-center max-w-[60px]",
+          "flex flex-col items-center justify-center",
           { "text-primary": pathname === props.path },
         )}>
           <div className="m-auto">{props.icon}</div>

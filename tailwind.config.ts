@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         primary: 'var(--color-primary)',
         textPrimary: 'var(--color-text-primary)',
-        bgPrimary: 'var(--color-bg-primary)',
+        bgPrimary: 'hsl(var(--color-bg-primary))',
         bgHighlight: 'var(--color-bg-highlight)',
         error: 'var(--color-error)',
         success: 'var(--color-success)',
