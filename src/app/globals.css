@@ -19,15 +19,15 @@
   }
 
   h1 {
-    @apply text-[3.75rem] font-bold leading-[60%] md:text-[4.5rem] md:leading-[100%];
+    @apply text-[3.75rem] font-bold leading-[100%] lg:text-[4.5rem];
   }
 
   h2 {
-    @apply text-[3rem] font-bold md:text-[3.5rem];
+    @apply text-[3rem] font-bold lg:text-[3.5rem];
   }
 
   h3 {
-    @apply text-[1.75rem] font-normal md:text-[2.25rem];
+    @apply text-[1.75rem] font-normal lg:text-[2.25rem];
   }
 
   h4 {
