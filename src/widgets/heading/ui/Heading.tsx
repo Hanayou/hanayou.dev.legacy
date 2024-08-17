@@ -9,7 +9,7 @@ export default function Heading({ children }: { children: React.ReactNode }) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5
+        duration: 1.0
       }
     }
   };
