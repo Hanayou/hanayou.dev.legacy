@@ -37,6 +37,13 @@ export default function Home() {
             />
           </section>
         </div>
+
+        <div className='flex flex-col items-center text-center py-[120px] gap-y-[120px]'>
+          <Heading>
+            <h2 className='px-4'>Professional <span className="text-primary">Experience</span></h2>
+          </Heading>
+          
+        </div>
       </main>
         
       <CountryBackground />

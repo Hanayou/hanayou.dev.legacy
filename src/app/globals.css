@@ -23,7 +23,7 @@
   }
 
   h2 {
-    @apply text-[3rem] font-bold lg:text-[3.5rem];
+    @apply text-[3rem] font-bold lg:text-[3.5rem] leading-[120%];
   }
 
   h3 {
