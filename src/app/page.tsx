@@ -1,3 +1,4 @@
+import Heading from '@/widgets/heading/ui/Heading';
 import CountryBackground from '@/widgets/hero/ui/CountryBackground';
 import Intro from '@/widgets/hero/ui/Intro';
 import ProfileImage from '@/widgets/hero/ui/ProfileImage';
@@ -12,12 +13,15 @@ export default function Home() {
           <ProfileImage />
         </div>
 
-        <div className='flex flex-col items-center text-center'>
-          <h2 className='py-[120px]'>My <span className="text-primary">Skills</span></h2>
+        <div className='flex flex-col items-center text-center py-[120px] gap-y-[120px]'>
+          <Heading>
+            <h2>My <span className="text-primary">Skills</span></h2>
+          </Heading>
           <SkillsList />
          
 
-          <h4 className="font-bold uppercase tracking-[0.5em] py-[120px]">languages</h4>
+
+          <h4 className="font-bold uppercase tracking-[0.5em]">languages</h4>
         </div>
       </main>
         
