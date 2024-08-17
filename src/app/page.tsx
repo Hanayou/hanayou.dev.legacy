@@ -22,7 +22,7 @@ export default function Home() {
           </Heading>
           <SkillsList />
 
-          <h4 className="relative font-bold uppercase tracking-[0.5em]">languages<BackgroundGradient /></h4>
+          <h4 className="relative font-bold uppercase tracking-[0.5em]">languages{/* <BackgroundGradient /> */}</h4>
           <section className='w-full flex flex-col gap-y-[50px]'>
             <SkillProgressBar skillName='English' skillLevelPercent={100} skillLevelText='Native' />
             <SkillProgressBar

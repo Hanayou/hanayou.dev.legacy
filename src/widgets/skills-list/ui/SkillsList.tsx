@@ -65,7 +65,7 @@ export default function SkillsList() {
 
   return (
     <motion.div
-      className='justify-center grid grid-cols-[repeat(auto-fit,_400px)] w-full px-[38px] gap-[40px]'
+      className='justify-center grid grid-cols-[repeat(auto-fit,_minmax(300px,_400px))] w-full px-[38px] gap-[40px]'
       variants={container}
       initial="hidden"
       whileInView="visible"
