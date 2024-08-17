@@ -69,6 +69,7 @@ export default function SkillsList() {
       variants={container}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
     >
       {cards.map((card, index) => (
         <motion.div key={index} variants={item}>

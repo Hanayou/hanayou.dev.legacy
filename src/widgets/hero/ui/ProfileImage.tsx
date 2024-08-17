@@ -7,10 +7,10 @@ export default function ProfileImage() {
   return (
     <motion.div
       className='m-auto z-0 relative w-[250px] lg:w-[350px] h-[250px] lg:h-[350px] bg-bgPrimary rounded-full'
-        initial={{ scale: 0.8, opacity: 0 }}
+        initial={{ scale: 1, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
-        exit={{ scale: 0.8, opacity: 0 }}
+        exit={{ scale: 1, opacity: 0 }}
       >
       <div className='absolute h-[1583px] w-screen -z-10 pointer-events-none top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-x-hidden'>
         <div className='absolute -z-10 pointer-events-none top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[1835px] h-[1583px] bg-[radial-gradient(40.00%_40.00%_at_50.00%_50.00%,rgba(113,202,252,0.30)_0%,rgba(58,66,79,0.00)_100%)] opacity-[72%]' />
