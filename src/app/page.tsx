@@ -30,7 +30,9 @@ export default function Home() {
               skillLevelPercent={80}
               skillLevelText='Business Level'
               milestones={[
-                { title: 'JLPT N2', description: 'The best secription ever!', date: new Date('2018-12-01'), achievedPercentage: 75 },
+                { title: 'JLPT N5', description: 'Passed the Japanese Language Proficient Test (JLPT) N5 level.', date: new Date('2013-12-01'), achievedPercentage: 20 },
+                { title: 'JLPT N3', description: 'Passed the Japanese Language Proficient Test (JLPT) N3 level.', date: new Date('2014-12-01'), achievedPercentage: 40 },
+                { title: 'JLPT N2', description: 'Passed the Japanese Language Proficient Test (JLPT) N2 level.', date: new Date('2018-12-01'), achievedPercentage: 75 },
               ]}
             />
           </section>

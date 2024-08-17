@@ -18,7 +18,6 @@ export default function SkillProgressBar({ skillName, skillLevelPercent, skillLe
           whileInView={{ width: `${skillLevelPercent}%` }}
           viewport={{ once: true }}
           onUpdate={(latest) => {
-            // Convert the width to a number if it's a string
             const width = typeof latest.width === 'string' ? parseFloat(latest.width) : latest.width;
             setAnimationProgress(width);
           }}
@@ -28,16 +27,21 @@ export default function SkillProgressBar({ skillName, skillLevelPercent, skillLe
             milestones?.map((milestone, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0, y: 50 }}
+                initial={{ opacity: 0, scale: 0, y: 0 }}
                 animate={{ 
                   opacity: animationProgress >= milestone.achievedPercentage ? 1 : 0,
                   scale: animationProgress >= milestone.achievedPercentage ? 1 : 0,
-                  y: animationProgress >= milestone.achievedPercentage ? 0 : 50,
+                  y: animationProgress >= milestone.achievedPercentage ? 0 : 0,
                 }}
                 transition={{ duration: 1.0, type: 'spring'}}
-                className={`absolute left-[${milestone.achievedPercentage}%] translate-x-[-50%] bottom-[25px]`}
+                className={`absolute bottom-[25px] z-[1*${index}]`}
+                style={{ 
+                  left: `calc(${milestone.achievedPercentage}% - 30px)`,
+                }}
               >
-                <Milestone {...milestone} />
+                <div className="w-[60px] flex items-center justify-center">
+                  <Milestone {...milestone} />
+                </div>
               </motion.div>
             ))
           }

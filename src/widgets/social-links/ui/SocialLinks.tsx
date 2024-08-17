@@ -33,7 +33,7 @@ export default function SocialLinks() {
       {socialLinks.map((link, index) => (
         <li key={index}>
           <a href={link.url} target="_blank" rel="noreferrer">
-            <div className="text-white opacity-50 hover:opacity-100 hover:scale-105 transition-all duration-200">
+            <div className="text-white w-full h-full opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-150">
               {link.icon}
             </div>
           </a>
