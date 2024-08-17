@@ -33,18 +33,18 @@ export default function Milestone({title, description, date, className}: TMilest
                   animate={{opacity: 1, height: 'auto', width: 'auto'}}
                   exit={{opacity: 0, height: 0, width: 0}}
                   transition={{ duration: 0.3 }}
-                  className='flex flex-col items-center gap-y-1 overflow-hidden'
+                  className='flex flex-col items-center px-[5px] pb-[10px] gap-y-1 overflow-hidden'
                 >
                   <motion.h4
                     layout
-                    className="text-white text-center mt-2 text-nowrap"
+                    className="text-white text-center text-nowrap"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                   >
                     {title}
                   </motion.h4>
                   <motion.p 
-                    className="text-white text-center text-sm mt-1"
+                    className="text-white text-center text-sm"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                   >
@@ -54,7 +54,7 @@ export default function Milestone({title, description, date, className}: TMilest
                     )}
                   </motion.p>
                   <motion.p 
-                    className="text-white text-center text-sm mt-1 mb-2 w-[150px]"
+                    className="text-white text-center text-sm w-[150px]"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                   >
