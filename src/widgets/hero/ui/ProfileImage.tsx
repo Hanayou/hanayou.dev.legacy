@@ -12,7 +12,7 @@ export default function ProfileImage() {
         transition={{ duration: 1, delay: 0.3 }}
         exit={{ scale: 1, opacity: 0 }}
       >
-      <div className='absolute h-[1583px] w-screen -z-10 pointer-events-none top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-x-hidden'>
+      <div className='absolute h-[1583px] w-[1835px] -z-10 pointer-events-none top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-x-hidden'>
         <div className='absolute -z-10 pointer-events-none top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[1835px] h-[1583px] bg-[radial-gradient(40.00%_40.00%_at_50.00%_50.00%,rgba(113,202,252,0.30)_0%,rgba(58,66,79,0.00)_100%)] opacity-[72%]' />
       </div>
       <div className='absolute z-20 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[220px] lg:w-[320px] h-[220px] lg:h-[320px] rounded-full bg-primary'>

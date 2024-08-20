@@ -23,9 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} max-w-[1366px] m-auto overflow-x-hidden overflow-y-scroll`}>
-        <MainNavigation />
-        {children}
+      <body className={`${lato.className} `}>
+        <div className="relative w-screen h-screen overflow-x-hidden ">
+          <div className="max-w-[1366px] m-auto">
+            <MainNavigation />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
