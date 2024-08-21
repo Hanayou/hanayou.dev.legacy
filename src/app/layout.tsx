@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.className} `}>
+        {/* body overflow-x:hidden is ignored on mobile, wrapper divs used as workaround */}
         <div className="relative w-screen h-screen overflow-x-hidden ">
           <div className="max-w-[1366px] m-auto">
             <MainNavigation />

@@ -5,6 +5,7 @@ import Intro from '@/widgets/hero/ui/Intro';
 import ProfileImage from '@/widgets/hero/ui/ProfileImage';
 import SkillProgressBar from '@/widgets/skill-progress-bar/ui/SkillProgressBar';
 import SkillsList from '@/widgets/skills-list/ui/SkillsList';
+import TimelineItem from '@/widgets/timeline/ui/TimelineItem';
 
 
 export default function Home() {
@@ -41,6 +42,8 @@ export default function Home() {
             <h2 className='px-4'>Professional <span className="text-primary">Experience</span></h2>
           </Heading>
           
+          <TimelineItem companyLogo="/nintex.png" jobTitle={"Developer/Consultant"} startDate={new Date("2018-01-01")} endDate={new Date("2018-07-01")} location="Melbourne, Australia" content="lorem ipsum dally doo da..."  />
+
         </div>
       </main>
         
